@@ -4,10 +4,30 @@
     <title>Marianer Graven</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="Flashlight Mouse Pointer.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AniStyle.css">
 </head>
 <body>
+    <div class="showcase">
+    <!--<img src="EveningSky.jpg" id="EveningSky">-->
+    <!--<img src="NightSky.jpg" id="NightSky">-->
+    <img src="DaySky.jpeg" id="DaySky">
+    <div class="ocean">
+        <svg>
+            <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+                <feTurbulence id="sea-filter" numOctaves="2" seed="2" baseFrequency="10 20"></feTurbulence>
+                <feDisplacementMap scale="9" in="SourceGraphic"></feDisplacementMap>
+                <feBlend in="SourceGraphic" in2="NOISE" mode="multiply" result="BLEND">     </feBlend>
+                <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s"
+                keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"></animate>
+            </filter>
+        </svg>
+    </div>
+    </div>
     <header>
-        <h1>Test med Flash light pointer</h1> 
+        <h1>Test med Flash light</h1>
         <nav>
             <a href="https://static.wikia.nocookie.net/beluga/images/9/99/Beluga_d.png/revision/latest?cb=20211229190719">Beluga</a>
             <a href="https://da.wikipedia.org/wiki/Marianergraven">Indianer bugten</a>
@@ -27,16 +47,22 @@
             <p> The Mariana Trench or Marianas Trench is located in the western Pacific Ocean about 200 kilometres (124 miles) east of the Mariana Islands; it is the deepest oceanic trench on Earth. It is crescent-shaped and measures about 2,550 km (1,580 miles) in length and 69 km (43 miles) in width. The maximum known depth is 10,984 ± 25 metres (36,037 ± 82 feat; 6.825 ± 0.016 miles) at the southern end of a small slot-shaped valley in its floor known as the Challenger Deep. If Mount Everest were hypothetically placed into the trench at this point, its peak would still be underwater by more than 2 kilometres (1.2 miles).</p>
             <p> The Mariana Trench or Marianas Trench is located in the western Pacific Ocean about 200 kilometres (124 miles) east of the Mariana Islands; it is the deepest oceanic trench on Earth. It is crescent-shaped and measures about 2,550 km (1,580 miles) in length and 69 km (43 miles) in width. The maximum known depth is 10,984 ± 25 metres (36,037 ± 82 feat; 6.825 ± 0.016 miles) at the southern end of a small slot-shaped valley in its floor known as the Challenger Deep. If Mount Everest were hypothetically placed into the trench at this point, its peak would still be underwater by more than 2 kilometres (1.2 miles).</p>
             <p> The Mariana Trench or Marianas Trench is located in the western Pacific Ocean about 200 kilometres (124 miles) east of the Mariana Islands; it is the deepest oceanic trench on Earth. It is crescent-shaped and measures about 2,550 km (1,580 miles) in length and 69 km (43 miles) in width. The maximum known depth is 10,984 ± 25 metres (36,037 ± 82 feat; 6.825 ± 0.016 miles) at the southern end of a small slot-shaped valley in its floor known as the Challenger Deep. If Mount Everest were hypothetically placed into the trench at this point, its peak would still be underwater by more than 2 kilometres (1.2 miles).</p>
+        <br>
         </article>
     </section>
 
     <aside>
         <h3> What can fit in the mariana trench?</h3>
-        <p> The Effiel Tower <br>The tower is 330 metres (1,083 ft) tall, about the same height as an 81-storey building, and the tallest structure in Paris. Its base is square, measuring 125 metres (410 ft) on each side </p>
-        <p> The Burj Khalifa <br>Burj Dubai prior to its inauguration in 2010, is a skyscraper in Dubai, United Arab Emirates. With a total height of 829.8 m (2,722 ft, or just over half a mile) and a roof height (excluding antenna, but including a 223 m spire) of 828 m (2,717 ft), the Burj Khalifa has been the tallest structure and building in the world since its topping out in 2009, supplanting Taipei 101, the previous holder of that status.</p>
+        <br>
+        <h4>The Effiel Tower</h4>
+        <p>The tower is 330 metres (1,083 ft) tall, about the same height as an 81-storey building, and the tallest structure in Paris. Its base is square, measuring 125 metres (410 ft) on each side </p>
+        <br>
+        <h4>The Burj Khalifa</h4>
+        <p>Burj Dubai prior to its inauguration in 2010, is a skyscraper in Dubai, United Arab Emirates. With a total height of 829.8 m (2,722 ft, or just over half a mile) and a roof height (excluding antenna, but including a 223 m spire) of 828 m (2,717 ft), the Burj Khalifa has been the tallest structure and building in the world since its topping out in 2009, supplanting Taipei 101, the previous holder of that status.</p>
+        <br>
     </aside>
 </main>
-
+<br>
 <footer>Kasper Stehning <br> 18-10-2022</footer>
 </body>
 </html>
