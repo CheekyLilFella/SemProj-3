@@ -1,5 +1,5 @@
 :root {
-    cursor: none;
+    cursor: pointer;
     --cursorX: 50vw;
     --cursorY: 50vh;
   }

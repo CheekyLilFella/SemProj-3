@@ -24,7 +24,8 @@
 </style>
     <title>Marianer Graven</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="Flashlight Mouse Pointer.js"></script>
+    <script src="Flashlight Mouse Pointer.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,14 +38,18 @@
     </div>
 
     <div class="showcase">
-    <!--<img src="EveningSky.jpg" id="EveningSky">-->
-    <!--<img src="NightSky.jpg" id="NightSky">-->
-    <img src="DaySky.jpeg" id="DaySky">
-    <div class="ocean">
+        <!--Himmel baggrunds billederne-->
+        <div id="Sky">
+    <img class="bottom" src="NightSky.jpg">
+    <img class="top" src="DaySky.jpeg">
+        </div>
+    <div id="skyToggle" class="ocean">
         <svg>
+            <!--Animationen der får overflade havet til at bevæge sig-->
             <filter id="turbulence" x="0" y="0" width="100%" height="100%">
                 <feTurbulence id="sea-filter" numOctaves="2" seed="2" baseFrequency="10 20"></feTurbulence>
                 <feDisplacementMap scale="9" in="SourceGraphic"></feDisplacementMap>
+                <!--feBlend gør overflade billede mørkere men der bliver også en mere flydende kant på-->
                 <feBlend in="SourceGraphic" in2="NOISE" mode="multiply" result="BLEND">     </feBlend>
                 <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s"
                 keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"></animate>
@@ -104,6 +109,7 @@
           var scrolled = (winScroll / height) * 100;
           document.getElementById("myBar").style.height = scrolled + "%";
           depth.innerHTML = "depth: " + Math.round(scrolled/100*10911);
-        }
+        };
+
 </script>
 </html>
