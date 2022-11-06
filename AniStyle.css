@@ -6,7 +6,6 @@
 
 .showcase {
     position: relative;
-    right: 0;
     width: 100%;
     min-height: 100vh;
 }
@@ -27,7 +26,6 @@
 /*Alt i transition, animation, og keyframes får himmel billedet til at skifte på en timer, duration styrer timerens tid*/
 #Sky img {
     position: absolute;
-    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -58,4 +56,12 @@
     100% {
         opacity: 0;
     }
+}
+
+.titelTekst {
+    position: absolute;
+    text-align: center;
+    left: 40%;
+    top: 40%;
+    z-index: 5;
 }

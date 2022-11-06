@@ -35,6 +35,12 @@
             </filter>
         </svg>
     </div>
+    <div class="titelTekst">
+        <h1>Marianer Graven!</h1>
+        <br>
+        <br>
+        <h4>Scroll Ned & Udforsk Havets Dybde</h4>
+    </div>
     </div>
     <div class="container">
         <img src="Eiffel-Towr-D-trans.jpg" alt="eiffel tower drawing" width="500" height="500">
@@ -106,6 +112,19 @@
           document.getElementById("myBar").style.height = scrolled + "%";
           depth.innerHTML = "depth: " + Math.round(scrolled/100*10911);
         };
+
+        function titelTextFunction() {
+            var gennemsigtighed = $(".top").css("opacity");
+            if(gennemsigtighed < 0.5) {
+            $(".titelTekst").css('color', 'white');
+            } else {
+                $(".titelTekst").css('color', 'black');
+            };
+        };
+
+        $(document).ready(function() {
+            setInterval("titelTextFunction()", 500);
+        });
 
 </script>
 </html>
