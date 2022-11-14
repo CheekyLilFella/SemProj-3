@@ -1,3 +1,11 @@
+wholepage {
+  display: flex;
+  flex: 1;
+  flex-flow: column wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
 :root {
     cursor: pointer;
     --cursorX: 50vw;
