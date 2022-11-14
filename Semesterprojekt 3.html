@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <title>Marianer Graven</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="AniStyle.css">
+    <link rel="stylesheet" type="text/css" href="resouces/css/style.css">
     <script src="Flashlight Mouse Pointer.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta charset="UTF-8">
@@ -101,30 +100,5 @@
 
     </wholepage>
 </body>
-<script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
-        function myFunction() {
-          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          var scrolled = (winScroll / height) * 100;
-          document.getElementById("myBar").style.height = scrolled + "%";
-          depth.innerHTML = "depth: " + Math.round(scrolled/100*10911);
-        };
-
-        function titelTextFunction() {
-            var gennemsigtighed = $(".top").css("opacity");
-            if(gennemsigtighed < 0.5) {
-            $(".titelTekst").css('color', 'white');
-            } else {
-                $(".titelTekst").css('color', 'black');
-            };
-        };
-
-        $(document).ready(function() {
-            setInterval("titelTextFunction()", 500);
-        });
-
-</script>
+<script src="/resources/javascript/js.js"></script>
 </html>
