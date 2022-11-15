@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Marianer Graven</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <script src="Flashlight Mouse Pointer.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+        <div class="progress-depth" id="depth"></div>
+    </div>
+
+    <wholepage>
+        <div class="showcase">
+            <!--Himmel baggrunds billederne-->
+            <div id="Sky">
+                <img class="bottom" src="images/NightSky.jpg">
+                <img class="top" src="images/DaySky.jpeg">
+            </div>
+            <div id="skyToggle" class="ocean">
+                <svg>
+                    <!--Animationen der får overflade havet til at bevæge sig-->
+                    <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+                        <feTurbulence id="sea-filter" numOctaves="2" seed="2" baseFrequency="10 20"></feTurbulence>
+                        <feDisplacementMap scale="9" in="SourceGraphic"></feDisplacementMap>
+                        <!--feBlend gør overflade billede mørkere men der bliver også en mere flydende kant på-->
+                        <feBlend in="SourceGraphic" in2="NOISE" mode="multiply" result="BLEND">     </feBlend>
+                        <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s"
+                        keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"></animate>
+                    </filter>
+                </svg>
+            </div>
+            <div class="titelTekst">
+                <h1>Marianer Graven!</h1>
+                <br>
+                <br>
+                <h4>Scroll Ned & Udforsk Havets Dybde</h4>
+            </div>
+        </div>
+
+        <main>
+            <ul class="list">
+                <section class="eiffel">
+                    <img src="images/Eiffel-Towr-D-trans.jpg" alt="eiffel tower drawing" width="500" height="500">
+                    <p> Eiffel tower <br> 300 meters tall. <br> build in 1887</p>
+                </section>
+
+                <section class="diver">
+                    <img src="images/diver.jpg" alt="Diver" width="300" height="200">
+                </section>
+
+                <section class="whale">
+                    <img src="images/blue-whale-drawing_step-6-removebg-preview.jpg" alt="Blue whale" width="500" height="400">
+                    <p> Blue whale <br> 500 meters deep, max depth they can dive. <br> </p>
+                </section>
+
+                <section class="Khalifa">
+                    <img src="images/Khalifa.jpg" alt="Khalifa Dubai building">
+                </section>
+
+                <section class="MountRush">
+                    <img src="images/Mountrushmore.jpg" alt="eiffel tower drawing" width="600" height="500">
+                    <p> Mount Rushmore is american national tressure thats 1745 meters tall</p>
+                </section>
+            </ul>
+
+            <article class="article">
+                <header class="footless">
+                    <h1>Test med Flash light</h1>
+                    <nav>
+                        <a href="https://static.wikia.nocookie.net/beluga/images/9/99/Beluga_d.png/revision/latest?cb=20211229190719">Beluga</a>
+                        <a href="https://da.wikipedia.org/wiki/Marianergraven">Marianer Graven</a>
+                    </nav>
+                </header>
+                <section class="footless">
+                    <article>
+                        <h2> Sea level</h2>
+                        <p>Havoverflade eller havniveau er et nulpunkt, som man refererer til i angivelser om højder, eksempelvis meter over havet. Dens beliggenhed påvirkes af en række faktorer over kortere og længere tidsperioder.</p>
+                    </article>
+                    <article>
+                        <h2>Depth of marianer trench</h2>
+                        <p> The Mariana Trench or Marianas Trench is located in the western Pacific Ocean about 200 kilometres (124 miles) east of the Mariana Islands; it is the deepest oceanic trench on Earth. It is crescent-shaped and measures about 2,550 km (1,580 miles) in length and 69 km (43 miles) in width. The maximum known depth is 10,984 ± 25 metres (36,037 ± 82 feat; 6.825 ± 0.016 miles) at the southern end of a small slot-shaped valley in its floor known as the Challenger Deep. If Mount Everest were hypothetically placed into the trench at this point, its peak would still be underwater by more than 2 kilometres (1.2 miles).</p>
+                        <br>
+                    </article>
+                </section>
+                <aside class="footless">
+                    <h3> What can fit in the mariana trench?</h3>
+                    <br>
+                    <h4>The Effiel Tower</h4>
+                    <p>The tower is 330 metres (1,083 ft) tall, about the same height as an 81-storey building, and the tallest structure in Paris. Its base is square, measuring 125 metres (410 ft) on each side </p>
+                    <br>
+                    <h4>The Burj Khalifa</h4>
+                    <p>Burj Dubai prior to its inauguration in 2010, is a skyscraper in Dubai, United Arab Emirates. With a total height of 829.8 m (2,722 ft, or just over half a mile) and a roof height (excluding antenna, but including a 223 m spire) of 828 m (2,717 ft), the Burj Khalifa has been the tallest structure and building in the world since its topping out in 2009, supplanting Taipei 101, the previous holder of that status.</p>
+                    <br>
+                </aside>
+                <footer>
+                    <br>
+                    <p>Made by: Kasper, Lucas, Marinus & Victor</p>
+                    <br>
+                </footer>
+            </article>
+        </main>
+    </wholepage>
+</body>
+<script src="/resources/javascript/js.js"></script>
+</html>

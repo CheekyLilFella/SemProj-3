@@ -1,3 +1,28 @@
+:root {
+  cursor: pointer;
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(circle 10vmax at var(--cursorX) var(--cursorY), 
+  rgba(0,0,0,0) 0%,
+  rgba(0,0,0,.5) 80%, 
+  rgba(0,0,0,.95) 100%);
+  z-index: 1;
+}
+
+body {
+  background-color: rgb(249, 249, 249);
+  cursor: default;
+}
+
 wholepage {
   display: flex;
   flex: 1;
@@ -6,25 +31,19 @@ wholepage {
   justify-content: center;
 }
 
-:root {
-    cursor: pointer;
-    --cursorX: 50vw;
-    --cursorY: 50vh;
-  }
-  :root:before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    pointer-events: none;
-    background: radial-gradient(circle 10vmax at var(--cursorX) var(--cursorY), 
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,.5) 80%, 
-    rgba(0,0,0,.95) 100%);
-  }
+.showcase {
+  z-index: 2;
+}
+
+.titelTekst {
+  position: relative;
+  text-align: center;
+  top: 300px;
+}
+
+/* Depth Counter */
 .progress-container{
-  z-index: 1;
+  z-index: 5;
   position: fixed;
   width: 8px;
   height: 100%;
@@ -42,24 +61,41 @@ wholepage {
   top: -40px;
   color: red;
 }
+/*              */
 
 h2 {color:aliceblue;}
 
-body {background-color: rgb(249, 249, 249);}
+main {
+  background-color: rgb(63, 178, 190);
+}
 
-.container {
+ul {
+  margin-left: 15px;
+}
+
+.eiffel {
   position: relative;
   width: 50%;
+  left: 40vw;
 }
-        
-.image {
+
+.footless {
+  margin-left: 15px;
+}
+
+footer {
+  background-color: rgb(228, 201, 176);
+  text-align: center;
+}
+
+/* .image {
   display: block;
   width: 100%;
   height: auto;
  object-position: right bottom;
-}
+} */
         
-.text {
+/* .text {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -67,9 +103,10 @@ body {background-color: rgb(249, 249, 249);}
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-}
+} */
 
 
+/* Animation Style */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -86,7 +123,7 @@ body {background-color: rgb(249, 249, 249);}
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("Water billede.png");
+  background-image: url("../../images/Water billede.png");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -128,12 +165,4 @@ body {background-color: rgb(249, 249, 249);}
   100% {
       opacity: 0;
   }
-}
-
-.titelTekst {
-  position: absolute;
-  text-align: center;
-  left: 40%;
-  top: 40%;
-  z-index: 5;
 }
