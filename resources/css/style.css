@@ -11,37 +11,13 @@
   height: 100%;
   position: fixed;
   pointer-events: none;
-  background: radial-gradient(circle 10vmax at var(--cursorX) var(--cursorY), 
+  background: radial-gradient(circle 15vmax at var(--cursorX) var(--cursorY), 
   rgba(0,0,0,0) 0%,
   rgba(0,0,0,.5) 80%, 
   rgba(0,0,0,.95) 100%);
   z-index: 1;
 }
 
-body {
-  background-color: rgb(249, 249, 249);
-  cursor: default;
-}
-
-wholepage {
-  display: flex;
-  flex: 1;
-  flex-flow: column wrap;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.showcase {
-  z-index: 2;
-}
-
-.titelTekst {
-  position: relative;
-  text-align: center;
-  top: 300px;
-}
-
-/* Depth Counter */
 .progress-container{
   z-index: 5;
   position: fixed;
@@ -61,79 +37,10 @@ wholepage {
   top: -40px;
   color: red;
 }
-/*              */
-
-h2 {color:aliceblue;}
-
-main {
-  background-color: rgb(63, 178, 190);
-}
-
-ul {
-  margin-left: 15px;
-}
-
-.eiffel {
-  position: relative;
-  width: 50%;
-  left: 40vw;
-}
-
-.footless {
-  margin-left: 15px;
-}
-
-footer {
-  background-color: rgb(228, 201, 176);
-  text-align: center;
-}
-
-/* .image {
-  display: block;
-  width: 100%;
-  height: auto;
- object-position: right bottom;
-} */
-        
-/* .text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-} */
-
-
-/* Animation Style */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.showcase {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-}
-
-.ocean {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-image: url("../../images/Water billede.png");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  bottom: 0;
-  left: 0;
-  filter: url("#turbulence");
-}
 
 /*Alt i transition, animation, og keyframes får himmel billedet til at skifte på en timer, duration styrer timerens tid*/
 #Sky img {
+  display: flex;
   position: absolute;
   left: 0;
   width: 100%;
@@ -142,7 +49,6 @@ footer {
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-  
 }
 
 #Sky img.top {
@@ -152,6 +58,7 @@ footer {
   animation-duration: 15s;
   animation-direction: alternate;
 }
+
 @keyframes skyFade {
   0% {
       opacity: 1;
@@ -165,4 +72,118 @@ footer {
   100% {
       opacity: 0;
   }
+}
+
+.ocean {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../images/Water/Water billede.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+  filter: url("#turbulence");
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  cursor: default;
+}
+
+.water {
+  cursor: url(../../Images/Diver/submarinista-02.gif) 150 25, default;
+}
+
+wholepage {
+  display: flex;
+  flex: 1;
+  flex-flow: column wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+wholepage > header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  z-index: 2;
+  cursor: url(../../Images/Bird/268.png) 64 64, default;
+}
+
+.titelTekst {
+  position: relative;
+  top: 25rem;
+  text-align: center;
+  z-index: 3;
+}
+
+wholepage > main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+wholepage > main > article {
+  width: 95%;
+}
+
+wholepage > footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: auto;
+  height: 10vh;
+  font-size: 18px;
+  background-color: rgb(228, 201, 176);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1800px;
+}
+
+ul > section {
+  display: flex;
+  height: 1000px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+ul > section > empty {
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+  width: 50%;
+  /* border: 2px solid blue; */
+}
+
+ul > section > item {
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+  width: 50%;
+  /* border: 2px solid red; */
+}
+
+ul > between {
+  height: 1000px;
+}
+
+#vandFarve {
+  height: auto;
+  background-image: linear-gradient(#034E58, aqua, blue, navy, black);
 }
