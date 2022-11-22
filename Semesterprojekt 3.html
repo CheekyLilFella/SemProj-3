@@ -43,6 +43,15 @@
     </div>
     </div>
     <div id="vandFarve"></div>
+    <div class="mid">
+
+        <label class="rocker">
+          <input id="torch" type="checkbox" unchecked>
+          <span class="switch-left">On</span>
+          <span class="switch-right">Off</span>
+        </label>
+      
+      </div>
     <!--<div class="container">
         <img src="Eiffel-Towr-D-trans.jpg" alt="eiffel tower drawing" width="500" height="500">
 
@@ -101,6 +110,7 @@
         <br>
     </aside>
 </main>-->
+    </div>
 </body>
 <script>
         // When the user scrolls the page, execute myFunction
@@ -114,6 +124,7 @@
           depth.innerHTML = "depth: " + Math.round(scrolled/100*10911);
         };
 
+        //Billede skifte af himmel
         function titelTextFunction() {
             var gennemsigtighed = $(".top").css("opacity");
             if(gennemsigtighed < 0.5) {
@@ -126,6 +137,36 @@
         $(document).ready(function() {
             setInterval("titelTextFunction()", 500);
         });
+        
+
+        //lightbulb effect to follow mouse
+        function update(e)
+{
+  var x = e.touches ? e.touches[0].clientX : e.clientX;
+  var y = e.touches ? e.touches[0].clientY : e.clientY;
+
+  document.documentElement.style.setProperty('--cursorX', x + 'px')
+  document.documentElement.style.setProperty('--cursorY', y + 'px')
+}
+
+document.addEventListener('mousemove',update)
+document.addEventListener('touchmove',update)
+
+//En switch der skifter om lommelygten er tændt eller slukket
+const torchInput = document.getElementById("torch");
+torchInput.addEventListener("input", torchToggle);
+function torchToggle()
+{
+  document.documentElement.classList.toggle("torch", torchInput.checked);
+
+  if(torchInput.checked == true) {
+    $(".mid").css("background-color", "white");
+  } else {
+    $(".mid").css("background-color", "black");
+  }
+}
+
+torchToggle();
 
 </script>
 </html>
