@@ -11,7 +11,7 @@
   height: 100%;
   position: fixed;
   pointer-events: none;
-  background: radial-gradient(circle 15vmax at var(--cursorX) var(--cursorY), 
+  background: radial-gradient(circle 20vmax at var(--cursorX) var(--cursorY), 
   rgba(0,0,0,0) 0%,
   rgba(0,0,0,.5) 80%, 
   rgba(0,0,0,.95) 100%);
@@ -173,6 +173,7 @@ ul > section > empty {
 
 ul > section > item {
   display: flex;
+  align-items: center;
   justify-content: center;
   height: 1000px;
   width: 50%;
@@ -187,3 +188,74 @@ ul > between {
   height: auto;
   background-image: linear-gradient(#034E58, aqua, blue, navy, black);
 }
+
+
+billede {
+  border: 2px solid purple;
+}
+
+#eiffel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 422px;
+  height: 591px;
+  background: url("../../Images/DepthItems/EiffelTower-Trans.jpg") no-repeat;
+}
+#eiffel:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/Diver Red.png") no-repeat;
+  z-index: 2;
+}
+
+#diver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#diver:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/Diver Red.png") no-repeat;
+  z-index: 2;
+}
+
+#whale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 577px;
+  height: 432px;
+  background: url("../../Images/DepthItems/BlueWhale.jpg") no-repeat;
+}
+#whale:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/Whale Red.png") no-repeat;
+  z-index: 2;
+}
+
+#Khalifa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 477px;
+  height: 523px;
+  background: url("../../Images/DepthItems/Khalifa.jpg") no-repeat;
+}
+#Khalifa:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/Diver Red.png") no-repeat;
+  z-index: 2;
+}
+
+#MountRush {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 217px;
+  height: 232px;
+  background: url("../../Images/DepthItems/Mountrushmore.jpg") no-repeat;
+}
+#MountRush:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/Diver Red.png") no-repeat;
+  z-index: 2;
+}
+
