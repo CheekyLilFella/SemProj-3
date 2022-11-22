@@ -10,18 +10,19 @@ function myFunction() {
     depth.innerHTML = "depth: " + Math.round(scrolled/100*10911);
 };
 
-function titelTextFunction() {
-    var gennemsigtighed = $(".top").css("opacity");
-    if(gennemsigtighed < 0.5) {
-    $(".titelTekst").css('color', 'white');
-    } else {
-        $(".titelTekst").css('color', 'black');
-    };
-};
+// Billede skifte af himlen
+ function titelTextFunction() {
+            var gennemsigtighed = $(".top").css("opacity");
+            if(gennemsigtighed < 0.5) {
+            $(".titelTekst").css('color', 'white');
+            } else {
+                $(".titelTekst").css('color', 'black');
+            };
+        };
 
-$(document).ready(function() {
-    setInterval("titelTextFunction()", 500);
-});
+        $(document).ready(function() {
+            setInterval("titelTextFunction()", 500);
+        });
 
 
 // Flashlight Mouse Pointer

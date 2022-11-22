@@ -121,10 +121,11 @@ wholepage > header {
 }
 
 .titelTekst {
-  position: relative;
-  top: 25rem;
+  position: absolute;
   text-align: center;
-  z-index: 3;
+  left: 40%;
+  top: 40%;
+  z-index: 5;
 }
 
 wholepage > main {
