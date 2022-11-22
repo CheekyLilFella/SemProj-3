@@ -99,7 +99,7 @@ body {
 }
 
 .water {
-  cursor: url(../../Images/Diver/submarinista-02.gif), default;
+  cursor: url(../../Images/Diver/submarinista-02.gif) 150 25, default;
 }
 
 wholepage {
@@ -117,13 +117,14 @@ wholepage > header {
   height: 100%;
   min-height: 100vh;
   z-index: 2;
-  cursor: url(../../Images/Bird/268.png), default;
+  cursor: url(../../Images/Bird/268.png) 64 64, default;
 }
 
 .titelTekst {
   position: relative;
+  top: 25rem;
   text-align: center;
-  top: 300px;
+  z-index: 3;
 }
 
 wholepage > main {
