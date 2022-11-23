@@ -18,6 +18,16 @@
   z-index: 1;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  cursor: default;
+}
+
 .progress-container{
   z-index: 5;
   position: fixed;
@@ -36,6 +46,24 @@
   left: 10px;
   top: -40px;
   color: red;
+}
+
+wholepage {
+  display: flex;
+  flex: 1;
+  flex-flow: column wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+wholepage > header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  z-index: 2;
+  cursor: url(../../Images/Bird/268.png) 64 64, default;
 }
 
 /*Alt i transition, animation, og keyframes får himmel billedet til at skifte på en timer, duration styrer timerens tid*/
@@ -87,39 +115,6 @@
   filter: url("#turbulence");
 }
 
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  cursor: default;
-}
-
-.water {
-  cursor: url(../../Images/Diver/submarinista-02.gif) 150 25, default;
-}
-
-wholepage {
-  display: flex;
-  flex: 1;
-  flex-flow: column wrap;
-  flex-direction: column;
-  justify-content: center;
-}
-
-wholepage > header {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
-  z-index: 2;
-  cursor: url(../../Images/Bird/268.png) 64 64, default;
-}
-
 .titelTekst {
   position: relative;
   top: 25rem;
@@ -134,26 +129,28 @@ wholepage > main {
   width: 100%;
 }
 
-wholepage > main > article {
-  width: 95%;
+#vandFarve {
+  height: auto;
+  background-image: linear-gradient(#034E58, aqua, blue, navy, black);
 }
 
-wholepage > footer {
+.water {
+  cursor: url(../../Images/Diver/submarinista-02.gif) 150 25, default;
+}
+
+scroll {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: auto;
-  height: 10vh;
-  font-size: 18px;
-  background-color: rgb(228, 201, 176);
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  max-width: 1800px;
+  width: 80%;
 }
 
 ul > section {
@@ -184,14 +181,33 @@ ul > between {
   height: 1000px;
 }
 
-#vandFarve {
-  height: auto;
-  background-image: linear-gradient(#034E58, aqua, blue, navy, black);
+thermometer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+  row-gap: 50px;
+  z-index: 2;
 }
 
-/* billede {
-  border: 2px solid purple;
-} */
+temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 1000px;
+
+}
+
+degree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 40%;
+  height: 20%;
+  color: white;
+}
 
 .popup {
   visibility: hidden;
@@ -209,6 +225,21 @@ ul > between {
 billede:hover .popup {
   visibility: visible;
 }
+
+wholepage > main > article {
+  width: 95%;
+}
+
+wholepage > footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: auto;
+  height: 10vh;
+  font-size: 18px;
+  background-color: rgb(228, 201, 176);
+}
+
 
 #eiffel {
   display: flex;
