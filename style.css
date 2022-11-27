@@ -82,6 +82,11 @@
           background-image: linear-gradient(#034E58, aqua, blue, navy);
         }
 
+        #pre-black {
+          height: 1000px;
+          background-image: linear-gradient(midnightblue, black);
+        }
+
 /*Flashlight effekten*/
 
         :root.torch {

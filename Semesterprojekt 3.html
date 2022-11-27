@@ -43,6 +43,7 @@
     </div>
     </div>
     <div id="vandFarve"></div>
+    <div id="pre-black"></div>
     <div class="mid">
 
         <label class="rocker">
@@ -155,6 +156,7 @@ document.addEventListener('touchmove',update)
 //En switch der skifter om lommelygten er tændt eller slukket
 const torchInput = document.getElementById("torch");
 torchInput.addEventListener("input", torchToggle);
+
 function torchToggle()
 {
   document.documentElement.classList.toggle("torch", torchInput.checked);
@@ -167,6 +169,16 @@ function torchToggle()
 }
 
 torchToggle();
+
+//Slukker lygten automatisk når musen enter "pre-black" div
+const preBlackSwitch = document.getElementById("pre-black");
+preBlackSwitch.addEventListener("mouseenter", SwitchOff);
+
+function SwitchOff() {
+  torchToggle();
+  torchInput.checked = false;
+}
+
 
 </script>
 </html>
