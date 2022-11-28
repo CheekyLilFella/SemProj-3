@@ -29,23 +29,24 @@ body {
 }
 
 .progress-container{
-  z-index: 5;
+  z-index: 10;
   position: fixed;
-  width: 8px;
+  width: 20px;
   height: 100%;
-  background: #ccc;
+  background: lightblue;
 }
 .progress-bar {
   height: 0%;
-  width: 8px;
+  width: 20px;
   background: #00F;
 }
 .progress-depth{
   height: 8px;
   position: relative;
-  left: 10px;
+  left: 25px;
   top: -40px;
-  color: red;
+  color: aqua;
+  font-size: larger;
 }
 
 wholepage {
@@ -62,7 +63,7 @@ wholepage > header {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  z-index: 2;
+  z-index: 5;
   cursor: url(../../Images/Bird/268.png) 64 64, default;
 }
 
@@ -119,7 +120,7 @@ wholepage > header {
   position: relative;
   top: 25rem;
   text-align: center;
-  z-index: 3;
+  z-index: 6;
 }
 
 wholepage > main {
@@ -129,13 +130,41 @@ wholepage > main {
   width: 100%;
 }
 
+.water {
+  cursor: url(../../Images/Diver/submarinista-02.gif) 150 25, default;
+}
+
+intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: xx-large;
+  z-index: 3;
+  color: lightblue;
+}
+
+#overgang {
+  height: auto;
+  z-index: 2;
+  background-image: linear-gradient(#034e58, blue);
+  background-image: linear-gradient(rgb(3, 78, 88) 0%, rgb(1.5, 39, 44) 50%, rgb(0, 0, 0) 100%);
+}
+
+pilher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 280px;
+  background: url("../../Images/Other/fish-right-arrow-collage-blue-260nw-1103823998.webp") no-repeat;
+  z-index: 3;
+  transform: rotate(45deg);
+}
+
 #vandFarve {
   height: auto;
   background-image: linear-gradient(#034E58, aqua, blue, navy, black);
-}
-
-.water {
-  cursor: url(../../Images/Diver/submarinista-02.gif) 150 25, default;
 }
 
 scroll {
@@ -178,7 +207,30 @@ ul > section > item {
 }
 
 ul > between {
-  height: 1000px;
+  height: 500px;
+}
+
+.leftPopup, .rightPopup {
+  visibility: hidden;
+  width: 20%;
+  height: 33%;
+  background-color: lightblue;
+  position: absolute;
+  z-index: 3;
+  border-radius: 6px;
+  padding: 8px 0;
+}
+
+.rightPopup {
+  left: 15%;
+}
+
+.leftPopup {
+  right: 15%;
+}
+
+billede:hover .rightPopup, billede:hover .leftPopup {
+  visibility: visible;
 }
 
 thermometer {
@@ -195,7 +247,7 @@ temp {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 1000px;
+  height: 2000px;
 
 }
 
@@ -206,24 +258,8 @@ degree {
   position: sticky;
   top: 40%;
   height: 20%;
-  color: white;
-}
-
-.popup {
-  visibility: hidden;
-  width: 200px;
-  height: 200px;
-  background-color: #ccc;
-  position: absolute;
-  z-index: 3;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 3;
-}
-
-billede:hover .popup {
-  visibility: visible;
+  color: lightblue;
+  font-size: large;
 }
 
 wholepage > main > article {
@@ -247,10 +283,10 @@ wholepage > footer {
   justify-content: center;
   width: 422px;
   height: 591px;
-  background: url("../../Images/DepthItems/EiffelTower-Trans.jpg") no-repeat;
+  background: url("../../Images/DepthItems/Eiffel Tower.png") no-repeat;
 }
 #eiffel:hover {
-  background: url("../../Images/DepthItems/OutlinedDepthItems/Diver Red.png") no-repeat;
+  background: url("../../Images/DepthItems/OutlinedDepthItems/Eiffel Tower Red.png") no-repeat;
   z-index: 2;
 }
 
