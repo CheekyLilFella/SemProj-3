@@ -10,23 +10,24 @@ function myFunction() {
     depth.innerHTML = "depth: " + Math.round(scrolled/100*10911);
 };
 
-// Billede skifte af himlen
- function titelTextFunction() {
-            var gennemsigtighed = $(".top").css("opacity");
-            if(gennemsigtighed < 0.5) {
-            $(".titelTekst").css('color', 'white');
-            } else {
-                $(".titelTekst").css('color', 'black');
-            };
-        };
 
-        $(document).ready(function() {
-            setInterval("titelTextFunction()", 500);
-        });
+// Billede skifte af himlen
+function titelTextFunction() {
+    var gennemsigtighed = $(".top").css("opacity");
+    if(gennemsigtighed < 0.5) {
+    $(".titelTekst").css('color', 'white');
+    } else {
+        $(".titelTekst").css('color', 'black');
+    };
+};
+
+$(document).ready(function() {
+    setInterval("titelTextFunction()", 500);
+});
 
 
 // Flashlight Mouse Pointer
-function update(e){
+function update(e) {
     var x = e.clientX || e.touches[0].clientX
     var y = e.clientY || e.touches[0].clientY
   
@@ -36,3 +37,32 @@ function update(e){
   
 document.addEventListener('mousemove',update)
 document.addEventListener('touchmove',update)
+
+
+//En switch der skifter om lommelygten er tændt eller slukket
+const torchInput = document.getElementById("torch");
+torchInput.addEventListener("input", torchToggle);
+
+function torchToggle() {
+  document.documentElement.classList.toggle("torch", torchInput.checked);
+
+  if(torchInput.checked == true) {
+    $(".mid").css("background-color", "#eee");
+  } else {
+    $(".mid").css("background-color", "#eee");
+  }
+}
+
+torchToggle();
+
+
+//Slukker lygten automatisk når musen enter "pre-black" div
+const preBlackSwitch1 = document.getElementById("pre-black1");
+preBlackSwitch1.addEventListener("mouseenter", SwitchOff);
+const preBlackSwitch2 = document.getElementById("pre-black2");
+preBlackSwitch2.addEventListener("mouseenter", SwitchOff);
+
+function SwitchOff() {
+  torchToggle();
+  torchInput.checked = false;
+}

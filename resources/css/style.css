@@ -1,41 +1,210 @@
-:root {
+:root.torch {
   cursor: pointer;
   --cursorX: 50vw;
   --cursorY: 50vh;
 }
-
-:root:before {
+:root.torch:before {
   content: '';
   display: block;
   width: 100%;
   height: 100%;
   position: fixed;
   pointer-events: none;
-  background: radial-gradient(circle 15vmax at var(--cursorX) var(--cursorY), 
-  rgba(0,0,0,0) 0%,
-  rgba(0,0,0,.5) 80%, 
-  rgba(0,0,0,.95) 100%);
+  background: radial-gradient(
+    circle 20vmax at var(--cursorX) var(--cursorY),
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,.5) 80%,
+    rgba(0,0,0,.95) 100%
+  );
   z-index: 1;
 }
 
+html {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin:0;
+  padding:0;
+}
+
+body {
+  cursor: default;
+}
+
 .progress-container{
-  z-index: 5;
+  z-index: 15;
   position: fixed;
-  width: 8px;
+  width: 20px;
   height: 100%;
-  background: #ccc;
+  background: lightblue;
 }
 .progress-bar {
   height: 0%;
-  width: 8px;
+  width: 20px;
   background: #00F;
 }
 .progress-depth{
   height: 8px;
   position: relative;
-  left: 10px;
-  top: -40px;
-  color: red;
+  left: 25px;
+  top: -55px;
+  color: aqua;
+  font-size: x-large;
+}
+
+.mid {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  height: auto;
+  z-index: 5;
+}
+
+/* Switch starts here */
+.rocker {
+  display: inline-block;
+  position: relative;
+  /*
+  SIZE OF SWITCH
+  ==============
+  All sizes are in em - therefore
+  changing the font-size here
+  will change the size of the switch.
+  See .rocker-small below as example.
+  */
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #888;
+  width: 7em;
+  height: 4em;
+  overflow: hidden;
+  border-bottom: 0.5em solid #eee;
+}
+
+.rocker-small {
+  font-size: 0.75em; /* Sizes the switch */
+  margin: 1em;
+}
+
+.rocker::before {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #999;
+  border: 0.5em solid #eee;
+  border-bottom: 0;
+}
+
+.rocker input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-left,
+.switch-right {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5em;
+  width: 3em;
+  transition: 0.2s;
+}
+
+.switch-left {
+  height: 2.4em;
+  width: 2.75em;
+  left: 0.85em;
+  bottom: 0.4em;
+  background-color: #ddd;
+  transform: rotate(15deg) skewX(15deg);
+}
+
+.switch-right {
+  right: 0.5em;
+  bottom: 0;
+  background-color: #bd5757;
+  color: #fff;
+}
+
+.switch-left::before,
+.switch-right::before {
+  content: "";
+  position: absolute;
+  width: 0.4em;
+  height: 2.45em;
+  bottom: -0.45em;
+  background-color: #ccc;
+  transform: skewY(-65deg);
+}
+
+.switch-left::before {
+  left: -0.4em;
+}
+
+.switch-right::before {
+  right: -0.375em;
+  background-color: transparent;
+  transform: skewY(65deg);
+}
+
+input:checked + .switch-left {
+  background-color: #0084d0;
+  color: #fff;
+  bottom: 0px;
+  left: 0.5em;
+  height: 2.5em;
+  width: 3em;
+  transform: rotate(0deg) skewX(0deg);
+}
+
+input:checked + .switch-left::before {
+  background-color: transparent;
+  width: 3.0833em;
+}
+
+input:checked + .switch-left + .switch-right {
+  background-color: #ddd;
+  color: #888;
+  bottom: 0.4em;
+  right: 0.8em;
+  height: 2.4em;
+  width: 2.75em;
+  transform: rotate(-15deg) skewX(-15deg);
+}
+
+input:checked + .switch-left + .switch-right::before {
+  background-color: #ccc;
+}
+
+wholepage {
+  display: flex;
+  flex: 1;
+  flex-flow: column wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+wholepage > header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  z-index: 10;
+  cursor: url(../../Images/Bird/268.png) 64 64, default;
 }
 
 /*Alt i transition, animation, og keyframes får himmel billedet til at skifte på en timer, duration styrer timerens tid*/
@@ -87,45 +256,11 @@
   filter: url("#turbulence");
 }
 
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  cursor: default;
-}
-
-.water {
-  cursor: url(../../Images/Diver/submarinista-02.gif) 150 25, default;
-}
-
-wholepage {
-  display: flex;
-  flex: 1;
-  flex-flow: column wrap;
-  flex-direction: column;
-  justify-content: center;
-}
-
-wholepage > header {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
-  z-index: 2;
-  cursor: url(../../Images/Bird/268.png) 64 64, default;
-}
-
 .titelTekst {
-  position: absolute;
+  position: relative;
+  top: 25rem;
   text-align: center;
-  left: 40%;
-  top: 40%;
-  z-index: 5;
+  z-index: 11;
 }
 
 wholepage > main {
@@ -135,26 +270,100 @@ wholepage > main {
   width: 100%;
 }
 
-wholepage > main > article {
-  width: 95%;
+.water {
+  cursor: url(../../Images/Diver/submarinista-02.gif) 150 25, default;
 }
 
-wholepage > footer {
+intro {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 7;
+  color: lightblue;
+}
+
+#overgang {
+  height: auto;
+  z-index: 6;
+  background-image: linear-gradient(rgb(3, 78, 88) 0%, rgb(1.5, 39, 44) 50%, rgb(0, 0, 0) 100%);
+}
+
+#undergang {
+  width: 100%;
+  height: 20vmax + 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(1.5, 39, 44) 50%, rgb(3, 78, 88) 100%);
+}
+
+#pre-black1 {
+  height: 19vmax;
+  width: 100%;
+}
+
+#pre-black2 {
+  height: 1vmax;
+  width: 100%;
+}
+
+explainer {
+  display: flex;
+  flex-direction: row;
   align-items: flex-end;
-  width: auto;
-  height: 10vh;
-  font-size: 18px;
-  background-color: rgb(228, 201, 176);
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+}
+
+explainer > h2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: sticky;
+  bottom: 5%;
+  right: 10em;
+  height: auto;
+  color: lightblue;
+  font-size: xx-large;
+  z-index: 7;
+}
+
+#vandFarve {
+  height: auto;
+  background-image: linear-gradient(rgb(3, 78, 88), aqua, blue, navy);
+}
+
+pilher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+pilher > billede {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 280px;
+  background: url("../../Images/Other/fish-right-arrow-collage-blue-260nw-1103823998.webp") no-repeat;
+  transform: rotate(45deg);
+  z-index: 7;
+}
+
+scroll {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  max-width: 1800px;
+  width: 80%;
 }
 
 ul > section {
@@ -169,22 +378,148 @@ ul > section > empty {
   justify-content: center;
   height: 1000px;
   width: 50%;
-  /* border: 2px solid blue; */
 }
 
 ul > section > item {
   display: flex;
+  align-items: center;
   justify-content: center;
   height: 1000px;
   width: 50%;
-  /* border: 2px solid red; */
 }
 
 ul > between {
-  height: 1000px;
+  height: 500px;
 }
 
-#vandFarve {
+.leftPopup, .rightPopup {
+  visibility: hidden;
+  width: 20%;
+  height: 33%;
+  background-color: lightblue;
+  position: absolute;
+  z-index: 3;
+  border-radius: 6px;
+  padding: 8px 0;
+}
+
+.rightPopup {
+  left: 15%;
+}
+
+.leftPopup {
+  right: 15%;
+}
+
+billede:hover .rightPopup, billede:hover .leftPopup {
+  visibility: visible;
+}
+
+thermometer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+  row-gap: 50px;
+  z-index: 2;
+}
+
+temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 2000px;
+
+}
+
+degree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 5%;
   height: auto;
-  background-image: linear-gradient(#034E58, aqua, blue, navy, black);
+  color: lightblue;
+  font-size: xx-large;
+}
+
+wholepage > main > content > article {
+  width: 95%;
+}
+
+wholepage > footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: auto;
+  height: 10vh;
+  font-size: 18px;
+  background-color: rgb(228, 201, 176);
+}
+
+
+#eiffel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 422px;
+  height: 591px;
+  background: url("../../Images/DepthItems/Eiffel Tower.png") no-repeat;
+}
+#eiffel:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/Eiffel Tower Red.png") no-repeat;
+  z-index: 2;
+}
+
+#diver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#diver:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/Diver Red.png") no-repeat;
+  z-index: 2;
+}
+
+#whale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 577px;
+  height: 432px;
+  background: url("../../Images/DepthItems/BlueWhale.jpg") no-repeat;
+}
+#whale:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/Whale Red.png") no-repeat;
+  z-index: 2;
+}
+
+#Khalifa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 477px;
+  height: 523px;
+  background: url("../../Images/DepthItems/Khalifa.jpg") no-repeat;
+}
+#Khalifa:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/Diver Red.png") no-repeat;
+  z-index: 2;
+}
+
+#MountRush {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 217px;
+  height: 232px;
+  background: url("../../Images/DepthItems/Mountrushmore.jpg") no-repeat;
+}
+#MountRush:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/Diver Red.png") no-repeat;
+  z-index: 2;
 }
