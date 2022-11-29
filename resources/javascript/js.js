@@ -11,6 +11,7 @@ function myFunction() {
 };
 
 
+// Billede skifte af himlen
 function titelTextFunction() {
     var gennemsigtighed = $(".top").css("opacity");
     if(gennemsigtighed < 0.5) {
