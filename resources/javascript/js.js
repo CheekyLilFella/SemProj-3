@@ -46,9 +46,9 @@ function torchToggle() {
   document.documentElement.classList.toggle("torch", torchInput.checked);
 
   if(torchInput.checked == true) {
-    $(".mid").css("background-color", "white");
+    $(".mid").css("background-color", "#eee");
   } else {
-    $(".mid").css("background-color", "black");
+    $(".mid").css("background-color", "#eee");
   }
 }
 
@@ -56,8 +56,10 @@ torchToggle();
 
 
 //Slukker lygten automatisk når musen enter "pre-black" div
-const preBlackSwitch = document.getElementById("pre-black");
-preBlackSwitch.addEventListener("mouseenter", SwitchOff);
+const preBlackSwitch1 = document.getElementById("pre-black1");
+preBlackSwitch1.addEventListener("mouseenter", SwitchOff);
+const preBlackSwitch2 = document.getElementById("pre-black2");
+preBlackSwitch2.addEventListener("mouseenter", SwitchOff);
 
 function SwitchOff() {
   torchToggle();
