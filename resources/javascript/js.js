@@ -10,6 +10,7 @@ function myFunction() {
     depth.innerHTML = "depth: " + Math.round(scrolled/100*10911);
 };
 
+
 function titelTextFunction() {
     var gennemsigtighed = $(".top").css("opacity");
     if(gennemsigtighed < 0.5) {
@@ -25,7 +26,7 @@ $(document).ready(function() {
 
 
 // Flashlight Mouse Pointer
-function update(e){
+function update(e) {
     var x = e.clientX || e.touches[0].clientX
     var y = e.clientY || e.touches[0].clientY
   
@@ -35,3 +36,30 @@ function update(e){
   
 document.addEventListener('mousemove',update)
 document.addEventListener('touchmove',update)
+
+
+//En switch der skifter om lommelygten er tændt eller slukket
+const torchInput = document.getElementById("torch");
+torchInput.addEventListener("input", torchToggle);
+
+function torchToggle() {
+  document.documentElement.classList.toggle("torch", torchInput.checked);
+
+  if(torchInput.checked == true) {
+    $(".mid").css("background-color", "white");
+  } else {
+    $(".mid").css("background-color", "black");
+  }
+}
+
+torchToggle();
+
+
+//Slukker lygten automatisk når musen enter "pre-black" div
+const preBlackSwitch = document.getElementById("pre-black");
+preBlackSwitch.addEventListener("mouseenter", SwitchOff);
+
+function SwitchOff() {
+  torchToggle();
+  torchInput.checked = false;
+}
