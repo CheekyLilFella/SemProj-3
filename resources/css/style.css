@@ -466,6 +466,11 @@ wholepage > footer {
   width: 422px;
   height: 591px;
   background: url("../../Images/DepthItems/Eiffel Tower.png") no-repeat;
+  -webkit-transform:rotate(180deg); 
+-moz-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+transform: rotate(180deg);
 }
 #eiffel:hover {
   background: url("../../Images/DepthItems/OutlinedDepthItems/Eiffel Tower Red.png") no-repeat;
@@ -505,6 +510,11 @@ wholepage > footer {
   width: 477px;
   height: 523px;
   background: url("../../Images/DepthItems/Khalifa.jpg") no-repeat;
+  -webkit-transform:rotate(180deg);
+-moz-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+transform: rotate(180deg);
 }
 #Khalifa:hover {
   background: url("../../Images/DepthItems/OutlinedDepthItems/Diver Red.png") no-repeat;
@@ -518,6 +528,11 @@ wholepage > footer {
   width: 217px;
   height: 232px;
   background: url("../../Images/DepthItems/Mountrushmore.jpg") no-repeat;
+  -webkit-transform:rotate(180deg); 
+-moz-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+transform: rotate(180deg);
 }
 #MountRush:hover {
   background: url("../../Images/DepthItems/OutlinedDepthItems/Diver Red.png") no-repeat;
