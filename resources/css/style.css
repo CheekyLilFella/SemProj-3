@@ -396,6 +396,22 @@ ul > between {
   padding: 8px 0;
 }
 
+.left180Pop, .right180Pop {
+  visibility: hidden;
+  width: 70%;
+  height: 70%;
+  background-color: lightblue;
+  position: absolute;
+  z-index: 3;
+  border-radius: 6px;
+  padding: 8px 0;
+  -webkit-transform:rotate(180deg); 
+-moz-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+transform: rotate(180deg);
+}
+
 .rightPopup {
   left: 15%;
 }
@@ -404,7 +420,15 @@ ul > between {
   right: 15%;
 }
 
-billede:hover .rightPopup, billede:hover .leftPopup {
+.right180Pop {
+  left: 150%;
+}
+
+.left180Pop {
+  right: 120%;
+}
+
+billede:hover .rightPopup, billede:hover .leftPopup, billede:hover .right180Pop, billede:hover .left180Pop {
   visibility: visible;
 }
 
