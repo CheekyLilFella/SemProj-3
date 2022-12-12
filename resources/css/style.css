@@ -305,6 +305,32 @@ intro {
   width: 100%;
 }
 
+#havMørke {
+  width: 100%;
+  height: 20vmax + 100vh;
+  background-image: linear-gradient(navy, black);
+}
+
+#switchOffFailSafe {
+  width: 100%;
+  height: 19vmax;
+}
+
+#switchOffFailSafe2 {
+  width: 100%;
+  height: 1vmax;
+}
+
+#pre-black3 {
+  width: 100%;
+  height: 1vmax;
+}
+
+#pre-black4 {
+  width: 100%;
+  height: 19vmax;
+}
+
 explainer {
   display: flex;
   flex-direction: row;
