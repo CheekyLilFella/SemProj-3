@@ -7,7 +7,7 @@ function myFunction() {
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.height = scrolled + "%";
-    depth.innerHTML = "depth: " + Math.round(scrolled/100*10984);
+    depth.innerHTML = "Dybde: " + Math.round(scrolled/100*10984) + "m";
 };
 
 
