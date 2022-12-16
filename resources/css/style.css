@@ -633,3 +633,6 @@ transform: rotate(180deg);
   z-index: 2;
 }
 
+#waterSound {
+  z-index: 50;
+}
