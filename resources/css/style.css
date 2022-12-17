@@ -558,16 +558,29 @@ wholepage > footer {
 
 
 
-#eiffel {
+#ladyLiberty {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 422px;
   height: 591px;
-  background: url("../../Images/DepthItems/Eiffel Tower.png") no-repeat;
+  background: url("../../Images/DepthItems/LadyLiberty.png") no-repeat;
 }
-#eiffel:hover {
-  background: url("../../Images/DepthItems/OutlinedDepthItems/Eiffel Tower Red.png") no-repeat;
+#ladyLiberty:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/LadyLibertyRed.png") no-repeat;
+  z-index: 2;
+}
+
+#eiffelTower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 422px;
+  height: 591px;
+  background: url("../../Images/DepthItems/EiffelTower.png") no-repeat;
+}
+#eiffelTower:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/EiffelTowerRed.png") no-repeat;
   z-index: 2;
 }
 
@@ -580,11 +593,24 @@ wholepage > footer {
   background: url("../../Images/DepthItems/diver.jpg") no-repeat;
 }
 #diver:hover {
-  background: url("../../Images/DepthItems/OutlinedDepthItems/Diver Red.png") no-repeat;
+  background: url("../../Images/DepthItems/OutlinedDepthItems/DiverRed.png") no-repeat;
   z-index: 2;
 }
 
-#whale {
+#seaAngel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#seaAngel:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/DiverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#blåhval {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -592,23 +618,55 @@ wholepage > footer {
   height: 432px;
   background: url("../../Images/DepthItems/BlueWhale.jpg") no-repeat;
 }
-#whale:hover {
-  background: url("../../Images/DepthItems/OutlinedDepthItems/Whale Red.png") no-repeat;
+#blåhval:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/WhaleRed.png") no-repeat;
   z-index: 2;
 }
 
-#Khalifa {
+#giantPacificOctopus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#giantPacificOctopus:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/DiverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#burjKhalifa {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 477px;
   height: 523px;
-  background: url("../../Images/DepthItems/Khalifa.jpg") no-repeat;
+  background: url("../../Images/DepthItems/burjKhalifa.jpg") no-repeat;
 }
-#Khalifa:hover {
-  background: url("../../Images/DepthItems/OutlinedDepthItems/Diver Red.png") no-repeat;
+#burjKhalifa:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/DiverRed.png") no-repeat;
   z-index: 2;
 }
+
+#midnightZone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#midnightZone:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/DiverRed.png") no-repeat;
+  z-index: 2;
+}
+
+
+
+
+
+
 
 #MountRush {
   display: flex;
