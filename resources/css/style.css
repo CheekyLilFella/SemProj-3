@@ -293,6 +293,10 @@ intro {
   background-image: linear-gradient(rgb(3, 78, 88) 0%, rgb(1.5, 39, 44) 50%, rgb(0, 0, 0) 100%);
 }
 
+#waterSound {
+  z-index: 50;
+}
+
 #undergang {
   width: 100%;
   height: 20vmax + 100vh;
@@ -360,6 +364,10 @@ explainer > h2 {
   color: lightblue;
   font-size: xx-large;
   z-index: 7;
+}
+
+content {
+  width: 100%;
 }
 
 #vandFarve {
@@ -567,10 +575,10 @@ wholepage > footer {
   justify-content: center;
   width: 259px;
   height: 194px;
-  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+  background: url("../../Images/DepthItems/seaAngel.png") no-repeat;
 }
 #seaAngel:hover {
-  background: url("../../Images/DepthItems/OutlinedDepthItems/DiverRed.png") no-repeat;
+  background: url("../../Images/DepthItems/OutlinedDepthItems/seaAngelRed.png") no-repeat;
   z-index: 2;
 }
 
@@ -819,10 +827,10 @@ wholepage > footer {
   justify-content: center;
   width: 259px;
   height: 194px;
-  background: url("../../Images/DepthItems/dumboOctopus.png") no-repeat;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
 }
 #dumboOctopus:hover {
-  background: url("../../Images/DepthItems/OutlinedDepthItems/dumboOctopusRed.png") no-repeat;
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
   z-index: 2;
 }
 
@@ -941,25 +949,4 @@ wholepage > footer {
 #Trieste:hover {
   background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
   z-index: 2;
-}
-
-
-
-
-
-#MountRush {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 217px;
-  height: 232px;
-  background: url("../../Images/DepthItems/Mountrushmore.jpg") no-repeat;
-}
-#MountRush:hover {
-  background: url("../../Images/DepthItems/OutlinedDepthItems/Diver Red.png") no-repeat;
-  z-index: 2;
-}
-
-#waterSound {
-  z-index: 50;
 }
