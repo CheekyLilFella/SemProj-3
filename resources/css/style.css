@@ -518,7 +518,7 @@ wholepage > footer {
 
 
 
-.left180Pop, .right180Pop, #eiffel, #Khalifa, #MountRush {
+.left180Pop, .right180Pop {
   -webkit-transform:rotate(180deg); 
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -534,8 +534,8 @@ wholepage > footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 422px;
-  height: 591px;
+  width: 257px;
+  height: 196px;
   background: url("../../Images/DepthItems/ladyLiberty.png") no-repeat;
 }
 #ladyLiberty:hover {
@@ -573,8 +573,8 @@ wholepage > footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 259px;
-  height: 194px;
+  width: 199px;
+  height: 253px;
   background: url("../../Images/DepthItems/seaAngel.png") no-repeat;
 }
 #seaAngel:hover {
@@ -612,8 +612,8 @@ wholepage > footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 477px;
-  height: 523px;
+  width: 375px;
+  height: 666px;
   background: url("../../Images/DepthItems/burjKhalifa.png") no-repeat;
 }
 #burjKhalifa:hover {
@@ -695,8 +695,8 @@ wholepage > footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 259px;
-  height: 194px;
+  width: 152px;
+  height: 152px;
   background: url("../../Images/DepthItems/blobFish.png") no-repeat;
 }
 #blobFish:hover {
@@ -708,8 +708,8 @@ wholepage > footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 259px;
-  height: 194px;
+  width: 224px;
+  height: 225px;
   background: url("../../Images/DepthItems/bigRedJellyfish.png") no-repeat;
 }
 #bigRedJellyfish:hover {
@@ -734,8 +734,8 @@ wholepage > footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 259px;
-  height: 194px;
+  width: 209px;
+  height: 242px;
   background: url("../../Images/DepthItems/telescopeOctopus.png") no-repeat;
 }
 #telescopeOctopus:hover {
@@ -747,8 +747,8 @@ wholepage > footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 259px;
-  height: 194px;
+  width: 225px;
+  height: 225px;
   background: url("../../Images/DepthItems/colossalSquid.png") no-repeat;
 }
 #colossalSquid:hover {
@@ -760,8 +760,8 @@ wholepage > footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 259px;
-  height: 194px;
+  width: 194px;
+  height: 259px;
   background: url("../../Images/DepthItems/headlessChickenFish.png") no-repeat;
 }
 #headlessChickenFish:hover {
@@ -773,8 +773,8 @@ wholepage > footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 259px;
-  height: 194px;
+  width: 299px;
+  height: 168px;
   background: url("../../Images/DepthItems/cookiecutterShark.png") no-repeat;
 }
 #cookiecutterShark:hover {
@@ -799,8 +799,8 @@ wholepage > footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 259px;
-  height: 194px;
+  width: 280px;
+  height: 180px;
   background: url("../../Images/DepthItems/Titanic.png") no-repeat;
 }
 #Titanic:hover {
@@ -916,8 +916,8 @@ wholepage > footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 259px;
-  height: 194px;
+  width: 225px;
+  height: 225px;
   background: url("../../Images/DepthItems/seaCucumber.png") no-repeat;
 }
 #seaCucumber:hover {
@@ -929,8 +929,8 @@ wholepage > footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 259px;
-  height: 194px;
+  width: 596px;
+  height: 418px;
   background: url("../../Images/DepthItems/mountEverest.png") no-repeat;
 }
 #mountEverest:hover {
