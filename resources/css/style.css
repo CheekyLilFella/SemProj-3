@@ -423,8 +423,8 @@ ul > between {
 .leftPopup, .rightPopup, .left180Pop, .right180Pop {
   visibility: hidden;
   min-width: 300px;
+  max-width: 30%;
   min-height: 300px;
-  color: #2222aa;
   background-color: #00aeff;
   position: absolute;
   z-index: 3;
@@ -433,6 +433,14 @@ ul > between {
   border-style: outset;
   border-color: #2222ff;
   padding: 20px;
+}
+
+billede > span {
+  color: #2222aa;
+  font-size: large;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .rightPopup {
