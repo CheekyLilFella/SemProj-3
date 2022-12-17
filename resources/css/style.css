@@ -417,7 +417,7 @@ ul > section > item, ul > section > empty {
 }
 
 ul > between {
-  height: 500px;
+  height: 5px;
 }
 
 .leftPopup, .rightPopup, .left180Pop, .right180Pop {
@@ -488,50 +488,6 @@ wholepage > main > content > article {
   width: 95%;
 }
 
-anglerfish {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
-  width: 100%;
-  height: 100vh;
-}
-
-anglerfish > billede, anglerfish > empty {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  bottom: 8vh;
-  left: 8vw;
-  width: 403px;
-  height: 403px;
-}
-
-anglerfish > billede {
-  background: url("../../Images/Other/Angler Fish.png") no-repeat;
-  z-index: 0;
-}
-
-anglerfish > empty {
-  z-index: 7;
-}
-
-anglerfish > empty > light {
-  position: relative;
-  bottom: 62px;
-  left: -116px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow:
-    0 0 60px 15px #fff,  /* inner white */
-    0 0 100px 30px #f0f, /* middle magenta */
-    0 0 140px 45px #0ff; /* outer cyan */
-  z-index: 7;
-}
-
 wholepage > footer {
   display: flex;
   justify-content: center;
@@ -564,10 +520,10 @@ wholepage > footer {
   justify-content: center;
   width: 422px;
   height: 591px;
-  background: url("../../Images/DepthItems/LadyLiberty.png") no-repeat;
+  background: url("../../Images/DepthItems/ladyLiberty.png") no-repeat;
 }
 #ladyLiberty:hover {
-  background: url("../../Images/DepthItems/OutlinedDepthItems/LadyLibertyRed.png") no-repeat;
+  background: url("../../Images/DepthItems/OutlinedDepthItems/ladyLibertyRed.png") no-repeat;
   z-index: 2;
 }
 
@@ -577,10 +533,10 @@ wholepage > footer {
   justify-content: center;
   width: 422px;
   height: 591px;
-  background: url("../../Images/DepthItems/EiffelTower.png") no-repeat;
+  background: url("../../Images/DepthItems/eiffelTower.png") no-repeat;
 }
 #eiffelTower:hover {
-  background: url("../../Images/DepthItems/OutlinedDepthItems/EiffelTowerRed.png") no-repeat;
+  background: url("../../Images/DepthItems/OutlinedDepthItems/eiffelTowerRed.png") no-repeat;
   z-index: 2;
 }
 
@@ -593,7 +549,7 @@ wholepage > footer {
   background: url("../../Images/DepthItems/diver.jpg") no-repeat;
 }
 #diver:hover {
-  background: url("../../Images/DepthItems/OutlinedDepthItems/DiverRed.png") no-repeat;
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
   z-index: 2;
 }
 
@@ -616,10 +572,10 @@ wholepage > footer {
   justify-content: center;
   width: 577px;
   height: 432px;
-  background: url("../../Images/DepthItems/BlueWhale.jpg") no-repeat;
+  background: url("../../Images/DepthItems/blueWhale.jpg") no-repeat;
 }
 #blåhval:hover {
-  background: url("../../Images/DepthItems/OutlinedDepthItems/WhaleRed.png") no-repeat;
+  background: url("../../Images/DepthItems/OutlinedDepthItems/blueWhaleRed.png") no-repeat;
   z-index: 2;
 }
 
@@ -662,7 +618,322 @@ wholepage > footer {
   z-index: 2;
 }
 
+#anglerFish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 403px;
+  height: 403px;
+  background: url("../../Images/DepthItems/anglerFish.png") no-repeat;
+}
+#anglerFish:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/DiverRed.png") no-repeat;
+  z-index: 2;
+}
 
+/* #anglerSection {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+}
+
+#anglerFish, #anglerSection > empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  bottom: 8vh;
+  left: 8vw;
+  width: 403px;
+  height: 403px;
+}
+
+#anglerFish {
+  background: url("../../Images/Other/Angler Fish.png") no-repeat;
+  z-index: 0;
+}
+
+#anglerSection > empty {
+  z-index: 7;
+}
+
+#anglerSection > empty > light {
+  position: relative;
+  bottom: 62px;
+  left: -116px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow:
+    0 0 60px 15px #fff,
+    0 0 100px 30px #f0f,
+    0 0 140px 45px #0ff;
+  z-index: 7;
+} */
+
+#blobFish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#blobFish:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#bigRedJellyfish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#bigRedJellyfish:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#narhval {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#narhval:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#telescopeOctopus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#telescopeOctopus:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#colossalSquid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#colossalSquid:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#headlessChickenFish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#headlessChickenFish:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#cookiecutterShark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#cookiecutterShark:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#averageDepth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#averageDepth:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#Titanic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#Titanic:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#freezingPoint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#freezingPoint:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#dumboOctopus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#dumboOctopus:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#manilaTrench {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#manilaTrench:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#hadalZone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#hadalZone:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#ussJohnston {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#ussJohnston:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#javaTrench {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#javaTrench:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#hadalSnailfish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#hadalSnailfish:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#puertoRicoTrench {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#puertoRicoTrench:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#seaCucumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#seaCucumber:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#mountEverest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#mountEverest:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
+
+#Trieste {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 259px;
+  height: 194px;
+  background: url("../../Images/DepthItems/diver.jpg") no-repeat;
+}
+#Trieste:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/diverRed.png") no-repeat;
+  z-index: 2;
+}
 
 
 
