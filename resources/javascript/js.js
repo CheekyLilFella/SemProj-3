@@ -82,6 +82,12 @@ function SwitchOn() {
   torchInput.checked = true;
 }
 
+function snak() {
+  var msg = new SpeechSynthesisUtterance();
+  msg.text = "Eiffeltårnet er 300 meter højt. Det blev bygget i 1887.";
+  speechSynthesis.speak(msg);
+}
+
 //Particle effect
 particlesJS('undergang',
   
