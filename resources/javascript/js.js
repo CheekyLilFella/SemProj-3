@@ -8,6 +8,7 @@ function myFunction() {
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.height = scrolled + "%";
     depth.innerHTML = "Dybde: " + Math.round(scrolled/100*10984) + "m";
+    tryk.innerHTML = "Tryk: " + Math.round(1000*9.81*scrolled/1000) + "kPa";
 };
 
 

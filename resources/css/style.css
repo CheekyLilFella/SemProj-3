@@ -394,7 +394,6 @@ leftside {
 
 liste {
   width: 80%;
-  border: solid 2px red;
 }
 
 ul {
@@ -466,33 +465,16 @@ billede:hover .rightPopup, billede:hover .leftPopup, billede:hover .right180Pop,
   visibility: visible;
 }
 
-thermometer {
+pressure {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 10%;
-  row-gap: 50px;
-  z-index: 2;
-}
-
-temp {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 800px;
-
-}
-
-degree {
-  display: flex;
-  align-items: center;
   justify-content: center;
+  width: 10%;
   position: sticky;
-  top: 5%;
+  top: 10%;
   height: auto;
   color: lightblue;
   font-size: xx-large;
+  z-index: 2;
 }
 
 wholepage > main > content > article {
