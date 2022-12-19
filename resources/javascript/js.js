@@ -81,7 +81,7 @@ function SwitchOn() {
 
 function snak() {
   var msg = new SpeechSynthesisUtterance();
-  msg.text = "Eiffeltårnet er 300 meter højt. Det blev bygget i 1887.";
+  msg.text = "Du befinder dig nu 300 meter nede i marianer graven. Det svarer til højden på eiffeltårnet. Eiffeltårnet er placeret i Frankrigs hovedstad Paris. Ingeniøren bag tårnet var Gustave Eiffel. Det tog dem 2 år at bygge tårnet, og det stod færdiggjort i 1889.";
   speechSynthesis.speak(msg);
 }
 
