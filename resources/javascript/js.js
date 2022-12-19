@@ -59,18 +59,15 @@ torchToggle();
 //Slukker lygten automatisk når musen enter "pre-black" div
 const preBlackSwitch1 = document.getElementById("pre-black1");
 preBlackSwitch1.addEventListener("mouseenter", SwitchOff);
+preBlackSwitch1.addEventListener("mouseleave", SwitchOff);
+
 const preBlackSwitch2 = document.getElementById("pre-black2");
 preBlackSwitch2.addEventListener("mouseenter", SwitchOff);
+preBlackSwitch2.addEventListener("mouseleave", SwitchOff);
 
 const preBlackSwitch3 = document.getElementById("pre-black3");
 preBlackSwitch3.addEventListener("mouseenter", SwitchOn);
-const preBlackSwitch4 = document.getElementById("pre-black4");
-preBlackSwitch4.addEventListener("mouseenter", SwitchOn);
-
-const preBlackSwitchOffHavMørke = document.getElementById("switchOffFailSafe2");
-preBlackSwitchOffHavMørke.addEventListener("mouseleave", SwitchOff);
-const failSafeSwitchOff = document.getElementById("switchOffFailSafe");
-failSafeSwitchOff.addEventListener("mouseleave", SwitchOff);
+preBlackSwitch3.addEventListener("mouseleave", SwitchOn);
 
 function SwitchOff() {
   torchToggle();
