@@ -859,3 +859,16 @@ light {
   background: url("../../Images/DepthItems/OutlinedDepthItems/TriesteRed.png") no-repeat;
   z-index: 2;
 }
+
+#affaldssæk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 400px;
+  background: url("../../Images/DepthItems/affaldssæk.png") no-repeat;
+}
+#affaldssæk:hover {
+  background: url("../../Images/DepthItems/OutlinedDepthItems/affaldssækRed.png") no-repeat;
+  z-index: 2;
+}
